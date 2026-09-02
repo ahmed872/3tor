@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img">
+  
+  <defs>
+    <linearGradient id="bg-catwomen" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#FCFAF6"/>
+      <stop offset="1" stop-color="#EAE2D4"/>
+    </linearGradient>
+    <radialGradient id="glow-catwomen" cx="0.5" cy="0.4" r="0.58">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="liq-catwomen" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F3CBC4"/>
+      <stop offset="0.45" stop-color="#C4767A"/>
+      <stop offset="1" stop-color="#8B4248"/>
+    </linearGradient>
+    <linearGradient id="empty-catwomen" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#F3CBC4" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#C4767A" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="glass-catwomen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.34"/>
+      <stop offset="0.14" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="0.62" stop-color="#000000" stop-opacity="0.04"/>
+      <stop offset="0.9" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="cap-catwomen" x1="0" y1="0" x2="1" y2="0.25">
+      <stop offset="0" stop-color="#8A6B35"/>
+      <stop offset="0.16" stop-color="#C7A461"/>
+      <stop offset="0.42" stop-color="#F2E2BC"/>
+      <stop offset="0.72" stop-color="#C7A461"/>
+      <stop offset="1" stop-color="#8A6B35"/>
+    </linearGradient>
+    <linearGradient id="neck-catwomen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="0.35" stop-color="#F3CBC4" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8B4248" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="fade-catwomen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="reflect-catwomen">
+      <rect x="-1000" y="-1000" width="2000" height="2000" fill="url(#fade-catwomen)"/>
+    </mask>
+    <filter id="soft-catwomen" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg-catwomen)"/>
+  <rect width="640" height="800" fill="url(#glow-catwomen)" opacity="0.7"/>
+  
+  <rect y="672" width="640" height="128" fill="#DCD1BE" opacity="0.3"/>
+  <path d="M 0 672 L 640 672" stroke="#DCD1BE" stroke-opacity="0.7"/>
+  
+  <ellipse cx="320" cy="676" rx="187.68" ry="20.240000000000002"
+           fill="#B3A68F" opacity="0.5" filter="url(#soft-catwomen)"/>
+  <g mask="url(#reflect-catwomen)" opacity="0.16" transform="translate(320 672) scale(0.92 -0.3864)">
+    
+    <clipPath id="clip-catwomen"><path d="M 0 -18 C -108 -18 -164 -96 -164 -178 C -164 -262 -96 -324 0 -324 C 96 -324 164 -262 164 -178 C 164 -96 108 -18 0 -18 Z"/></clipPath>
+
+    <!-- العنق -->
+    <rect x="-30" y="-366" width="60" height="56" fill="url(#neck-catwomen)"/>
+    <rect x="-30" y="-366" width="4" height="56" fill="#ffffff" opacity="0.35"/>
+
+    <!-- الغطاء -->
+    <rect x="-46" y="-428" width="92" height="62" rx="26" fill="url(#cap-catwomen)"/>
+    <rect x="-46" y="-424" width="92" height="3" fill="#ffffff" opacity="0.28"/>
+    <rect x="-51" y="-378" width="102" height="12" rx="2" fill="url(#cap-catwomen)"/>
+
+    <!-- الزجاج والعطر -->
+    <path d="M 0 -18 C -108 -18 -164 -96 -164 -178 C -164 -262 -96 -324 0 -324 C 96 -324 164 -262 164 -178 C 164 -96 108 -18 0 -18 Z" fill="url(#empty-catwomen)"/>
+    <g clip-path="url(#clip-catwomen)">
+      <rect x="-260" y="-278.64" width="520" height="318.64" fill="url(#liq-catwomen)"/>
+      <ellipse cx="0" cy="-278.64" rx="164" ry="7" fill="#ffffff" opacity="0.18"/>
+      <ellipse cx="-72.16" cy="-136.07999999999998" rx="65.60000000000001" ry="77.75999999999999" fill="#ffffff" opacity="0.1"/>
+    </g>
+    <path d="M 0 -18 C -108 -18 -164 -96 -164 -178 C -164 -262 -96 -324 0 -324 C 96 -324 164 -262 164 -178 C 164 -96 108 -18 0 -18 Z" fill="url(#glass-catwomen)"/>
+    <path d="M 0 -18 C -108 -18 -164 -96 -164 -178 C -164 -262 -96 -324 0 -324 C 96 -324 164 -262 164 -178 C 164 -96 108 -18 0 -18 Z" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.4"/>
+
+    <!-- انعكاسات -->
+    <g clip-path="url(#clip-catwomen)">
+      <rect x="-118.08" y="-298" width="11" height="254" rx="5.5" fill="#ffffff" opacity="0.3"/>
+      <rect x="-91.84" y="-270" width="5" height="174" rx="2.5" fill="#ffffff" opacity="0.18"/>
+      <rect x="98.39999999999999" y="-284" width="6" height="214" rx="3" fill="#ffffff" opacity="0.12"/>
+    </g>
+
+    
+  </g>
+  <g transform="translate(320 672) scale(0.92)">
+    
+    <clipPath id="clip-catwomen"><path d="M 0 -18 C -108 -18 -164 -96 -164 -178 C -164 -262 -96 -324 0 -324 C 96 -324 164 -262 164 -178 C 164 -96 108 -18 0 -18 Z"/></clipPath>
+
+    <!-- العنق -->
+    <rect x="-30" y="-366" width="60" height="56" fill="url(#neck-catwomen)"/>
+    <rect x="-30" y="-366" width="4" height="56" fill="#ffffff" opacity="0.35"/>
+
+    <!-- الغطاء -->
+    <rect x="-46" y="-428" width="92" height="62" rx="26" fill="url(#cap-catwomen)"/>
+    <rect x="-46" y="-424" width="92" height="3" fill="#ffffff" opacity="0.28"/>
+    <rect x="-51" y="-378" width="102" height="12" rx="2" fill="url(#cap-catwomen)"/>
+
+    <!-- الزجاج والعطر -->
+    <path d="M 0 -18 C -108 -18 -164 -96 -164 -178 C -164 -262 -96 -324 0 -324 C 96 -324 164 -262 164 -178 C 164 -96 108 -18 0 -18 Z" fill="url(#empty-catwomen)"/>
+    <g clip-path="url(#clip-catwomen)">
+      <rect x="-260" y="-278.64" width="520" height="318.64" fill="url(#liq-catwomen)"/>
+      <ellipse cx="0" cy="-278.64" rx="164" ry="7" fill="#ffffff" opacity="0.18"/>
+      <ellipse cx="-72.16" cy="-136.07999999999998" rx="65.60000000000001" ry="77.75999999999999" fill="#ffffff" opacity="0.1"/>
+    </g>
+    <path d="M 0 -18 C -108 -18 -164 -96 -164 -178 C -164 -262 -96 -324 0 -324 C 96 -324 164 -262 164 -178 C 164 -96 108 -18 0 -18 Z" fill="url(#glass-catwomen)"/>
+    <path d="M 0 -18 C -108 -18 -164 -96 -164 -178 C -164 -262 -96 -324 0 -324 C 96 -324 164 -262 164 -178 C 164 -96 108 -18 0 -18 Z" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.4"/>
+
+    <!-- انعكاسات -->
+    <g clip-path="url(#clip-catwomen)">
+      <rect x="-118.08" y="-298" width="11" height="254" rx="5.5" fill="#ffffff" opacity="0.3"/>
+      <rect x="-91.84" y="-270" width="5" height="174" rx="2.5" fill="#ffffff" opacity="0.18"/>
+      <rect x="98.39999999999999" y="-284" width="6" height="214" rx="3" fill="#ffffff" opacity="0.12"/>
+    </g>
+
+    
+  </g>
+</svg>

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img">
+  
+  <defs>
+    <linearGradient id="bg-layali-oud2" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#1D1E23"/>
+      <stop offset="1" stop-color="#0B0B0D"/>
+    </linearGradient>
+    <radialGradient id="glow-layali-oud2" cx="0.5" cy="0.4" r="0.58">
+      <stop offset="0" stop-color="#3D3E46" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#3D3E46" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="liq-layali-oud2" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#B07A4A"/>
+      <stop offset="0.45" stop-color="#6A3A1D"/>
+      <stop offset="1" stop-color="#331A0C"/>
+    </linearGradient>
+    <linearGradient id="empty-layali-oud2" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#B07A4A" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#6A3A1D" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="glass-layali-oud2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.34"/>
+      <stop offset="0.14" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="0.62" stop-color="#000000" stop-opacity="0.04"/>
+      <stop offset="0.9" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="cap-layali-oud2" x1="0" y1="0" x2="1" y2="0.25">
+      <stop offset="0" stop-color="#8A6B35"/>
+      <stop offset="0.16" stop-color="#C7A461"/>
+      <stop offset="0.42" stop-color="#F2E2BC"/>
+      <stop offset="0.72" stop-color="#C7A461"/>
+      <stop offset="1" stop-color="#8A6B35"/>
+    </linearGradient>
+    <linearGradient id="neck-layali-oud2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="0.35" stop-color="#B07A4A" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#331A0C" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="fade-layali-oud2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="reflect-layali-oud2">
+      <rect x="-1000" y="-1000" width="2000" height="2000" fill="url(#fade-layali-oud2)"/>
+    </mask>
+    <filter id="soft-layali-oud2" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg-layali-oud2)"/>
+  <rect width="800" height="1000" fill="url(#glow-layali-oud2)" opacity="0.45"/>
+  <circle cx="400" cy="415" r="459" fill="none" stroke="#C2A16B" stroke-opacity="0.28"/>
+         <circle cx="400" cy="415" r="561" fill="none" stroke="#C2A16B" stroke-opacity="0.12"/>
+  <rect y="840" width="800" height="160" fill="#212226" opacity="0.45"/>
+  <path d="M 0 840 L 800 840" stroke="#212226" stroke-opacity="0.8"/>
+  
+  <ellipse cx="400" cy="844" rx="323" ry="37.4"
+           fill="#040405" opacity="0.65" filter="url(#soft-layali-oud2)"/>
+  <g mask="url(#reflect-layali-oud2)" opacity="0.16" transform="translate(400 840) scale(1.7 -0.714)">
+    
+    <clipPath id="clip-layali-oud2"><path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z"/></clipPath>
+
+    <!-- العنق -->
+    <rect x="-38" y="-400" width="76" height="58" fill="url(#neck-layali-oud2)"/>
+    <rect x="-38" y="-400" width="4" height="58" fill="#ffffff" opacity="0.35"/>
+
+    <!-- الغطاء -->
+    <rect x="-59" y="-478" width="118" height="78" rx="5" fill="url(#cap-layali-oud2)"/>
+    <rect x="-59" y="-474" width="118" height="3" fill="#ffffff" opacity="0.28"/>
+    <rect x="-64" y="-412" width="128" height="12" rx="2" fill="url(#cap-layali-oud2)"/>
+
+    <!-- الزجاج والعطر -->
+    <path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z" fill="url(#empty-layali-oud2)"/>
+    <g clip-path="url(#clip-layali-oud2)">
+      <rect x="-260" y="-306.15999999999997" width="520" height="346.15999999999997" fill="url(#liq-layali-oud2)"/>
+      <ellipse cx="0" cy="-306.15999999999997" rx="150" ry="7" fill="#ffffff" opacity="0.18"/>
+      <ellipse cx="-66" cy="-149.51999999999998" rx="60" ry="85.44" fill="#ffffff" opacity="0.1"/>
+    </g>
+    <path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z" fill="url(#glass-layali-oud2)"/>
+    <path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.4"/>
+
+    <!-- انعكاسات -->
+    <g clip-path="url(#clip-layali-oud2)">
+      <rect x="-108" y="-330" width="11" height="286" rx="5.5" fill="#ffffff" opacity="0.3"/>
+      <rect x="-84.00000000000001" y="-302" width="5" height="206" rx="2.5" fill="#ffffff" opacity="0.18"/>
+      <rect x="90" y="-316" width="6" height="246" rx="3" fill="#ffffff" opacity="0.12"/>
+    </g>
+
+    
+  </g>
+  <g transform="translate(400 840) scale(1.7)">
+    
+    <clipPath id="clip-layali-oud2"><path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z"/></clipPath>
+
+    <!-- العنق -->
+    <rect x="-38" y="-400" width="76" height="58" fill="url(#neck-layali-oud2)"/>
+    <rect x="-38" y="-400" width="4" height="58" fill="#ffffff" opacity="0.35"/>
+
+    <!-- الغطاء -->
+    <rect x="-59" y="-478" width="118" height="78" rx="5" fill="url(#cap-layali-oud2)"/>
+    <rect x="-59" y="-474" width="118" height="3" fill="#ffffff" opacity="0.28"/>
+    <rect x="-64" y="-412" width="128" height="12" rx="2" fill="url(#cap-layali-oud2)"/>
+
+    <!-- الزجاج والعطر -->
+    <path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z" fill="url(#empty-layali-oud2)"/>
+    <g clip-path="url(#clip-layali-oud2)">
+      <rect x="-260" y="-306.15999999999997" width="520" height="346.15999999999997" fill="url(#liq-layali-oud2)"/>
+      <ellipse cx="0" cy="-306.15999999999997" rx="150" ry="7" fill="#ffffff" opacity="0.18"/>
+      <ellipse cx="-66" cy="-149.51999999999998" rx="60" ry="85.44" fill="#ffffff" opacity="0.1"/>
+    </g>
+    <path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z" fill="url(#glass-layali-oud2)"/>
+    <path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.4"/>
+
+    <!-- انعكاسات -->
+    <g clip-path="url(#clip-layali-oud2)">
+      <rect x="-108" y="-330" width="11" height="286" rx="5.5" fill="#ffffff" opacity="0.3"/>
+      <rect x="-84.00000000000001" y="-302" width="5" height="206" rx="2.5" fill="#ffffff" opacity="0.18"/>
+      <rect x="90" y="-316" width="6" height="246" rx="3" fill="#ffffff" opacity="0.12"/>
+    </g>
+
+    
+  </g>
+</svg>

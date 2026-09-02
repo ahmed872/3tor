@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img">
+  
+  <defs>
+    <linearGradient id="bg-rimal-dhahabiya3" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#F4ECDF"/>
+      <stop offset="1" stop-color="#E0D0B8"/>
+    </linearGradient>
+    <radialGradient id="glow-rimal-dhahabiya3" cx="0.5" cy="0.4" r="0.58">
+      <stop offset="0" stop-color="#FFF9EC" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#FFF9EC" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="liq-rimal-dhahabiya3" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F7D89A"/>
+      <stop offset="0.45" stop-color="#D2932F"/>
+      <stop offset="1" stop-color="#8E5710"/>
+    </linearGradient>
+    <linearGradient id="empty-rimal-dhahabiya3" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#F7D89A" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#D2932F" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="glass-rimal-dhahabiya3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.34"/>
+      <stop offset="0.14" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="0.62" stop-color="#000000" stop-opacity="0.04"/>
+      <stop offset="0.9" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="cap-rimal-dhahabiya3" x1="0" y1="0" x2="1" y2="0.25">
+      <stop offset="0" stop-color="#8A6B35"/>
+      <stop offset="0.16" stop-color="#C7A461"/>
+      <stop offset="0.42" stop-color="#F2E2BC"/>
+      <stop offset="0.72" stop-color="#C7A461"/>
+      <stop offset="1" stop-color="#8A6B35"/>
+    </linearGradient>
+    <linearGradient id="neck-rimal-dhahabiya3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="0.35" stop-color="#F7D89A" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8E5710" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="fade-rimal-dhahabiya3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="reflect-rimal-dhahabiya3">
+      <rect x="-1000" y="-1000" width="2000" height="2000" fill="url(#fade-rimal-dhahabiya3)"/>
+    </mask>
+    <filter id="soft-rimal-dhahabiya3" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg-rimal-dhahabiya3)"/>
+  <rect width="800" height="1000" fill="url(#glow-rimal-dhahabiya3)" opacity="0.7"/>
+  
+  <rect y="840" width="800" height="160" fill="#CFBC9D" opacity="0.3"/>
+  <path d="M 0 840 L 800 840" stroke="#CFBC9D" stroke-opacity="0.7"/>
+  <g transform="translate(530.5 840) scale(1.05)">
+           <rect x="-82" y="-306" width="164" height="306" rx="2" fill="#8A6B35" opacity="0.14"/>
+           <rect x="-82" y="-306" width="164" height="306" rx="2" fill="none" stroke="#C7A461" stroke-opacity="0.5"/>
+           <path d="M -18 -186 L 0 -168 L 18 -186 L 0 -204 Z" fill="none" stroke="#C7A461" stroke-opacity="0.75" stroke-width="1.4"/>
+           <path d="M -34 -140 L 34 -140" stroke="#C7A461" stroke-opacity="0.35"/>
+         </g>
+  <ellipse cx="310" cy="844" rx="197.4" ry="23.1"
+           fill="#9E8B70" opacity="0.5" filter="url(#soft-rimal-dhahabiya3)"/>
+  <g mask="url(#reflect-rimal-dhahabiya3)" opacity="0.16" transform="translate(310 840) scale(1.05 -0.441)">
+    
+    <clipPath id="clip-rimal-dhahabiya3"><path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z"/></clipPath>
+
+    <!-- العنق -->
+    <rect x="-31" y="-422" width="62" height="54" fill="url(#neck-rimal-dhahabiya3)"/>
+    <rect x="-31" y="-422" width="4" height="54" fill="#ffffff" opacity="0.35"/>
+
+    <!-- الغطاء -->
+    <path d="M -46 -422 L 46 -422 L 37.72 -526 Q 37.72 -532 31.72 -532 L -31.72 -532 Q -37.72 -532 -37.72 -526 Z" fill="url(#cap-rimal-dhahabiya3)"/>
+    <rect x="-46" y="-522" width="92" height="3" fill="#ffffff" opacity="0.28"/>
+    <rect x="-51" y="-434" width="102" height="12" rx="2" fill="url(#cap-rimal-dhahabiya3)"/>
+
+    <!-- الزجاج والعطر -->
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="url(#empty-rimal-dhahabiya3)"/>
+    <g clip-path="url(#clip-rimal-dhahabiya3)">
+      <rect x="-260" y="-328.52" width="520" height="368.52" fill="url(#liq-rimal-dhahabiya3)"/>
+      <ellipse cx="0" cy="-328.52" rx="148" ry="7" fill="#ffffff" opacity="0.18"/>
+      <ellipse cx="-65.12" cy="-160.44" rx="59.2" ry="91.67999999999999" fill="#ffffff" opacity="0.1"/>
+    </g>
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="url(#glass-rimal-dhahabiya3)"/>
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.4"/>
+
+    <!-- انعكاسات -->
+    <g clip-path="url(#clip-rimal-dhahabiya3)">
+      <rect x="-106.56" y="-356" width="11" height="312" rx="5.5" fill="#ffffff" opacity="0.3"/>
+      <rect x="-82.88000000000001" y="-328" width="5" height="232" rx="2.5" fill="#ffffff" opacity="0.18"/>
+      <rect x="88.8" y="-342" width="6" height="272" rx="3" fill="#ffffff" opacity="0.12"/>
+    </g>
+
+    
+  <g opacity="0.92">
+    <rect x="-52" y="-213" width="104" height="86"
+          rx="2" fill="none" stroke="#FDF8EC" stroke-opacity="0.5"/>
+    <path d="M 0 -190 L 15 -173 L 0 -156 L -15 -173 Z"
+          fill="none" stroke="#FDF8EC" stroke-opacity="0.9" stroke-width="1.5"/>
+    <path d="M -22 -144 L 22 -144" stroke="#FDF8EC" stroke-opacity="0.45" stroke-width="1.2"/>
+  </g>
+  </g>
+  <g transform="translate(310 840) scale(1.05)">
+    
+    <clipPath id="clip-rimal-dhahabiya3"><path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z"/></clipPath>
+
+    <!-- العنق -->
+    <rect x="-31" y="-422" width="62" height="54" fill="url(#neck-rimal-dhahabiya3)"/>
+    <rect x="-31" y="-422" width="4" height="54" fill="#ffffff" opacity="0.35"/>
+
+    <!-- الغطاء -->
+    <path d="M -46 -422 L 46 -422 L 37.72 -526 Q 37.72 -532 31.72 -532 L -31.72 -532 Q -37.72 -532 -37.72 -526 Z" fill="url(#cap-rimal-dhahabiya3)"/>
+    <rect x="-46" y="-522" width="92" height="3" fill="#ffffff" opacity="0.28"/>
+    <rect x="-51" y="-434" width="102" height="12" rx="2" fill="url(#cap-rimal-dhahabiya3)"/>
+
+    <!-- الزجاج والعطر -->
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="url(#empty-rimal-dhahabiya3)"/>
+    <g clip-path="url(#clip-rimal-dhahabiya3)">
+      <rect x="-260" y="-328.52" width="520" height="368.52" fill="url(#liq-rimal-dhahabiya3)"/>
+      <ellipse cx="0" cy="-328.52" rx="148" ry="7" fill="#ffffff" opacity="0.18"/>
+      <ellipse cx="-65.12" cy="-160.44" rx="59.2" ry="91.67999999999999" fill="#ffffff" opacity="0.1"/>
+    </g>
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="url(#glass-rimal-dhahabiya3)"/>
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.4"/>
+
+    <!-- انعكاسات -->
+    <g clip-path="url(#clip-rimal-dhahabiya3)">
+      <rect x="-106.56" y="-356" width="11" height="312" rx="5.5" fill="#ffffff" opacity="0.3"/>
+      <rect x="-82.88000000000001" y="-328" width="5" height="232" rx="2.5" fill="#ffffff" opacity="0.18"/>
+      <rect x="88.8" y="-342" width="6" height="272" rx="3" fill="#ffffff" opacity="0.12"/>
+    </g>
+
+    
+  <g opacity="0.92">
+    <rect x="-52" y="-213" width="104" height="86"
+          rx="2" fill="none" stroke="#FDF8EC" stroke-opacity="0.5"/>
+    <path d="M 0 -190 L 15 -173 L 0 -156 L -15 -173 Z"
+          fill="none" stroke="#FDF8EC" stroke-opacity="0.9" stroke-width="1.5"/>
+    <path d="M -22 -144 L 22 -144" stroke="#FDF8EC" stroke-opacity="0.45" stroke-width="1.2"/>
+  </g>
+  </g>
+</svg>

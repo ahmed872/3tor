@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img">
+  
+  <defs>
+    <linearGradient id="bg-catwestern" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#FCFAF6"/>
+      <stop offset="1" stop-color="#EAE2D4"/>
+    </linearGradient>
+    <radialGradient id="glow-catwestern" cx="0.5" cy="0.4" r="0.58">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="liq-catwestern" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#93A2C4"/>
+      <stop offset="0.45" stop-color="#3D4A6B"/>
+      <stop offset="1" stop-color="#1B2136"/>
+    </linearGradient>
+    <linearGradient id="empty-catwestern" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#93A2C4" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#3D4A6B" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="glass-catwestern" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.34"/>
+      <stop offset="0.14" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="0.62" stop-color="#000000" stop-opacity="0.04"/>
+      <stop offset="0.9" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="cap-catwestern" x1="0" y1="0" x2="1" y2="0.25">
+      <stop offset="0" stop-color="#0D0E10"/>
+      <stop offset="0.16" stop-color="#26272C"/>
+      <stop offset="0.42" stop-color="#5A5B62"/>
+      <stop offset="0.72" stop-color="#26272C"/>
+      <stop offset="1" stop-color="#0D0E10"/>
+    </linearGradient>
+    <linearGradient id="neck-catwestern" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="0.35" stop-color="#93A2C4" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#1B2136" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="fade-catwestern" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="reflect-catwestern">
+      <rect x="-1000" y="-1000" width="2000" height="2000" fill="url(#fade-catwestern)"/>
+    </mask>
+    <filter id="soft-catwestern" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg-catwestern)"/>
+  <rect width="640" height="800" fill="url(#glow-catwestern)" opacity="0.7"/>
+  
+  <rect y="672" width="640" height="128" fill="#DCD1BE" opacity="0.3"/>
+  <path d="M 0 672 L 640 672" stroke="#DCD1BE" stroke-opacity="0.7"/>
+  
+  <ellipse cx="320" cy="676" rx="172.96" ry="20.240000000000002"
+           fill="#B3A68F" opacity="0.5" filter="url(#soft-catwestern)"/>
+  <g mask="url(#reflect-catwestern)" opacity="0.16" transform="translate(320 672) scale(0.92 -0.3864)">
+    
+    <clipPath id="clip-catwestern"><path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z"/></clipPath>
+
+    <!-- العنق -->
+    <rect x="-31" y="-422" width="62" height="54" fill="url(#neck-catwestern)"/>
+    <rect x="-31" y="-422" width="4" height="54" fill="#ffffff" opacity="0.35"/>
+
+    <!-- الغطاء -->
+    <path d="M -46 -422 L 46 -422 L 37.72 -526 Q 37.72 -532 31.72 -532 L -31.72 -532 Q -37.72 -532 -37.72 -526 Z" fill="url(#cap-catwestern)"/>
+    <rect x="-46" y="-522" width="92" height="3" fill="#ffffff" opacity="0.28"/>
+    <rect x="-51" y="-434" width="102" height="12" rx="2" fill="url(#cap-catwestern)"/>
+
+    <!-- الزجاج والعطر -->
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="url(#empty-catwestern)"/>
+    <g clip-path="url(#clip-catwestern)">
+      <rect x="-260" y="-328.52" width="520" height="368.52" fill="url(#liq-catwestern)"/>
+      <ellipse cx="0" cy="-328.52" rx="148" ry="7" fill="#ffffff" opacity="0.18"/>
+      <ellipse cx="-65.12" cy="-160.44" rx="59.2" ry="91.67999999999999" fill="#ffffff" opacity="0.1"/>
+    </g>
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="url(#glass-catwestern)"/>
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.4"/>
+
+    <!-- انعكاسات -->
+    <g clip-path="url(#clip-catwestern)">
+      <rect x="-106.56" y="-356" width="11" height="312" rx="5.5" fill="#ffffff" opacity="0.3"/>
+      <rect x="-82.88000000000001" y="-328" width="5" height="232" rx="2.5" fill="#ffffff" opacity="0.18"/>
+      <rect x="88.8" y="-342" width="6" height="272" rx="3" fill="#ffffff" opacity="0.12"/>
+    </g>
+
+    
+  </g>
+  <g transform="translate(320 672) scale(0.92)">
+    
+    <clipPath id="clip-catwestern"><path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z"/></clipPath>
+
+    <!-- العنق -->
+    <rect x="-31" y="-422" width="62" height="54" fill="url(#neck-catwestern)"/>
+    <rect x="-31" y="-422" width="4" height="54" fill="#ffffff" opacity="0.35"/>
+
+    <!-- الغطاء -->
+    <path d="M -46 -422 L 46 -422 L 37.72 -526 Q 37.72 -532 31.72 -532 L -31.72 -532 Q -37.72 -532 -37.72 -526 Z" fill="url(#cap-catwestern)"/>
+    <rect x="-46" y="-522" width="92" height="3" fill="#ffffff" opacity="0.28"/>
+    <rect x="-51" y="-434" width="102" height="12" rx="2" fill="url(#cap-catwestern)"/>
+
+    <!-- الزجاج والعطر -->
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="url(#empty-catwestern)"/>
+    <g clip-path="url(#clip-catwestern)">
+      <rect x="-260" y="-328.52" width="520" height="368.52" fill="url(#liq-catwestern)"/>
+      <ellipse cx="0" cy="-328.52" rx="148" ry="7" fill="#ffffff" opacity="0.18"/>
+      <ellipse cx="-65.12" cy="-160.44" rx="59.2" ry="91.67999999999999" fill="#ffffff" opacity="0.1"/>
+    </g>
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="url(#glass-catwestern)"/>
+    <path d="M -148 0 L -100 -372 Q -98 -382 -86 -382 L 86 -382 Q 98 -382 100 -372 L 148 0 Z" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.4"/>
+
+    <!-- انعكاسات -->
+    <g clip-path="url(#clip-catwestern)">
+      <rect x="-106.56" y="-356" width="11" height="312" rx="5.5" fill="#ffffff" opacity="0.3"/>
+      <rect x="-82.88000000000001" y="-328" width="5" height="232" rx="2.5" fill="#ffffff" opacity="0.18"/>
+      <rect x="88.8" y="-342" width="6" height="272" rx="3" fill="#ffffff" opacity="0.12"/>
+    </g>
+
+    
+  </g>
+</svg>
