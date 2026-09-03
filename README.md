@@ -40,6 +40,7 @@ Everything business-specific lives in **two files**.
 | `siteUrl` | `https://athar.example` | Real domain (used by SEO/structured data) |
 | `announcement` | shipping notice | Any confirmed announcement, or `enabled: false` |
 | `whatsapp.productMessage` | message template | Preferred wording |
+| `currency`, `currencyLabel`, `locale` | `SAR`, `ر.س`, `ar-SA` | Only if selling outside Saudi Arabia |
 
 ### 2. `src/config/content.js` — all editorial copy
 
@@ -104,8 +105,10 @@ src/
 
 - **RTL**: `dir="rtl"` with Tailwind logical properties (`ps/pe`, `ms/me`,
   `start/end`) throughout. Arabic text is never letter-spaced.
-- **Fonts**: IBM Plex Sans Arabic + Cormorant Garamond, self-hosted in
-  `public/fonts` — no third-party font requests at runtime.
+- **Fonts**: IBM Plex Sans Arabic (300/400/500) + Cormorant Garamond (400),
+  self-hosted in `public/fonts` — no third-party font requests at runtime. Only
+  the weights the UI uses are bundled; add a face to `src/fonts.css` if new copy
+  needs one.
 - **Product links**: opening a product pushes `?p=<slug>` so a product view can
   be shared; `Escape`, the back button and the close button all restore the page.
 - **Accessibility**: semantic landmarks, single `h1`, focus-visible rings, focus

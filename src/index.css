@@ -148,10 +148,6 @@
     @apply rounded-[3px] border border-ink-900/[0.07] bg-ivory-50;
   }
 
-  .hairline {
-    @apply border-ink-900/10;
-  }
-
   .no-scrollbar {
     scrollbar-width: none;
     -ms-overflow-style: none;

@@ -22,7 +22,6 @@ export const siteConfig = {
   tiktokUrl: 'https://www.tiktok.com/',
   amazonStoreUrl: 'https://www.amazon.sa/',
   snapchatUrl: '', // اتركه فارغاً لإخفاء الأيقونة
-  mapsUrl: '',
 
   // — العملة والموقع / Locale —
   currency: 'SAR',

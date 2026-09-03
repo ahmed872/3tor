@@ -3,7 +3,8 @@ import { siteConfig } from '../config/siteConfig';
 /** دمج أصناف tailwind بشكل مشروط */
 export const cn = (...classes) => classes.filter(Boolean).join(' ');
 
-const numberFormatter = new Intl.NumberFormat('ar-SA-u-nu-latn', {
+// أرقام لاتينية (٤٨٠ ← 480) لأنها الأوضح في عرض الأسعار داخل السعودية
+const numberFormatter = new Intl.NumberFormat(`${siteConfig.locale}-u-nu-latn`, {
   maximumFractionDigits: 0,
 });
 
