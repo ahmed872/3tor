@@ -13,7 +13,7 @@ export default function Categories({ onSelectCategory }) {
     <section
       id="categories"
       aria-labelledby="categories-title"
-      className="border-y border-ink-900/[0.07] bg-ivory-50 py-20 sm:py-24 lg:py-28"
+      className="border-y border-ink-900/[0.07] bg-ivory-50 section-y"
     >
       <div className="container-x">
         <SectionHeading
@@ -23,9 +23,9 @@ export default function Categories({ onSelectCategory }) {
           subtitle={copy.subtitle}
         />
 
-        <ul className="mt-12 grid grid-cols-2 gap-4 sm:gap-5 lg:mt-14 lg:grid-cols-3 lg:gap-6">
+        <ul className="mt-9 grid grid-cols-2 gap-4 sm:mt-11 sm:gap-5 lg:grid-cols-3 lg:gap-6">
           {categories.map((category, index) => (
-            <Reveal as="li" key={category.id} delay={(index % 3) * 80}>
+            <Reveal as="li" key={category.id} delay={(index % 3) * 65}>
               <button
                 type="button"
                 onClick={() => onSelectCategory(category.id)}
@@ -35,7 +35,7 @@ export default function Categories({ onSelectCategory }) {
                   src={category.image}
                   alt={`${category.title} — ${category.description}`}
                   className="aspect-[3/4] w-full sm:aspect-[4/5]"
-                  imgClassName="transition-transform duration-[900ms] ease-smooth group-hover:scale-[1.06]"
+                  imgClassName="transition-transform duration-700 ease-smooth group-hover:scale-[1.06]"
                 />
 
                 <span

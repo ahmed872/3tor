@@ -12,7 +12,7 @@ export default function Hero() {
     <section
       id="home"
       aria-labelledby="hero-title"
-      className="relative isolate overflow-hidden bg-ink-950 pb-16 pt-[124px] sm:pb-20 lg:flex lg:min-h-[100svh] lg:items-center lg:pb-24 lg:pt-[148px]"
+      className="relative isolate overflow-hidden bg-ink-950 pb-14 pt-[112px] sm:pb-16 lg:flex lg:min-h-[92svh] lg:items-center lg:pb-20 lg:pt-[136px]"
     >
       {/* خلفية زخرفية */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
@@ -22,13 +22,13 @@ export default function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-l from-transparent via-gold-400/25 to-transparent" />
       </div>
 
-      <div className="container-x grid w-full items-center gap-12 lg:grid-cols-12 lg:gap-16">
+      <div className="container-x grid w-full items-center gap-10 lg:grid-cols-12 lg:gap-14">
         <div className="lg:col-span-6">
           <span className="eyebrow eyebrow-light animate-fade-up">{hero.eyebrow}</span>
 
           <h1
             id="hero-title"
-            className="heading-xl mt-5 animate-fade-up font-light text-ivory-100 text-shadow-hero"
+            className="heading-xl mt-4 animate-fade-up font-light text-ivory-100 text-shadow-hero"
             style={{ animationDelay: '80ms' }}
           >
             <span className="block">{hero.title[0]}</span>
@@ -36,14 +36,14 @@ export default function Hero() {
           </h1>
 
           <p
-            className="mt-7 max-w-xl animate-fade-up text-[15px] leading-9 text-ink-200 sm:text-[17px]"
+            className="body-lead mt-6 max-w-xl animate-fade-up text-[15px] text-ink-200 sm:text-[16.5px]"
             style={{ animationDelay: '160ms' }}
           >
             {hero.subtitle}
           </p>
 
           <div
-            className="mt-9 flex animate-fade-up flex-col gap-3 sm:flex-row sm:items-center"
+            className="mt-8 flex animate-fade-up flex-col gap-3 sm:flex-row sm:items-center"
             style={{ animationDelay: '240ms' }}
           >
             <a
@@ -74,11 +74,11 @@ export default function Hero() {
           </div>
 
           <dl
-            className="mt-12 grid animate-fade-up grid-cols-3 gap-px overflow-hidden border-y border-ivory-100/10 bg-ivory-100/10 sm:max-w-lg"
+            className="mt-10 grid animate-fade-up grid-cols-3 gap-px overflow-hidden border-y border-ivory-100/10 bg-ivory-100/10 sm:max-w-lg"
             style={{ animationDelay: '320ms' }}
           >
             {hero.stats.map((stat) => (
-              <div key={stat.label} className="bg-ink-950 px-3 py-5 text-center sm:px-4">
+              <div key={stat.label} className="bg-ink-950 px-3 py-4 text-center sm:px-4">
                 <dt className="text-[13px] leading-6 text-gold-300 sm:text-[14px]">{stat.value}</dt>
                 <dd className="mt-1 text-[12px] text-ink-300">{stat.label}</dd>
               </div>
@@ -88,7 +88,7 @@ export default function Hero() {
 
         <div className="lg:col-span-6">
           <div
-            className="relative mx-auto w-full max-w-[380px] animate-fade-up sm:max-w-[420px] lg:me-0 lg:ms-auto lg:max-w-[440px]"
+            className="relative mx-auto w-full max-w-[330px] animate-fade-up sm:max-w-[400px] lg:me-0 lg:ms-auto lg:max-w-[430px]"
             style={{ animationDelay: '200ms' }}
           >
             <div
@@ -103,7 +103,7 @@ export default function Hero() {
               className="aspect-[4/5] rounded-[4px] shadow-[0_50px_120px_-40px_rgba(0,0,0,0.9)] lg:aspect-[3/4]"
             />
 
-            <div className="absolute bottom-4 start-4 rounded-[3px] border border-ivory-100/15 bg-ink-950/75 px-4 py-3 backdrop-blur-sm sm:bottom-6 sm:start-6">
+            <div className="absolute bottom-4 end-4 rounded-[3px] border border-ivory-100/15 bg-ink-950/70 px-4 py-3 sm:bottom-5 sm:end-5">
               <p className="latin-caps text-[9px] text-gold-300">{siteConfig.brandNameLatin}</p>
               <p className="mt-1.5 text-[13px] text-ivory-100">{siteConfig.tagline}</p>
             </div>
@@ -118,10 +118,10 @@ export default function Hero() {
           scrollToSection('collection');
         }}
         aria-label="الانتقال إلى المجموعة"
-        className="absolute inset-x-0 bottom-6 mx-auto hidden w-fit flex-col items-center gap-2 text-ink-300 transition-colors hover:text-gold-300 lg:flex"
+        className="group absolute inset-x-0 bottom-6 mx-auto hidden w-fit flex-col items-center gap-2 text-ink-300 transition-colors hover:text-gold-300 lg:flex"
       >
         <span className="text-[12px]">اكتشف المزيد</span>
-        <ChevronDown size={18} aria-hidden="true" className="animate-bounce" />
+        <ChevronDown size={18} aria-hidden="true" className="transition-transform duration-500 ease-smooth group-hover:translate-y-1" />
       </a>
     </section>
   );

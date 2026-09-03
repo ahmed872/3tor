@@ -18,7 +18,7 @@ import {
 import { useDialog } from '../hooks/useDialog';
 
 const availabilityTone = {
-  ok: 'border-[#1FA855]/30 bg-[#1FA855]/[0.08] text-[#157A3F]',
+  ok: 'border-whatsapp/30 bg-whatsapp/[0.08] text-whatsapp-darker',
   warn: 'border-gold-500/40 bg-gold-50 text-gold-700',
   off: 'border-ink-900/15 bg-ink-900/[0.04] text-ink-500',
 };
@@ -82,7 +82,7 @@ export default function ProductModal({ product, onClose }) {
 
           <div className="grid gap-0 lg:grid-cols-2">
             {/* المعرض */}
-            <div className="bg-ivory-100 p-4 sm:p-6 lg:p-8">
+            <div className="bg-ivory-100 p-3 sm:p-6 lg:p-8">
               <div className="relative">
                 <SmartImage
                   key={gallery[activeImage]}
@@ -99,9 +99,9 @@ export default function ProductModal({ product, onClose }) {
               </div>
 
               {gallery.length > 1 && (
-                <ul className="mt-3 flex gap-3">
+                <ul className="mt-2.5 flex gap-2.5 sm:mt-3 sm:gap-3">
                   {gallery.map((image, index) => (
-                    <li key={image} className="flex-1">
+                    <li key={image} className="w-[68px] sm:w-auto sm:flex-1">
                       <button
                         type="button"
                         onClick={() => setActiveImage(index)}
@@ -127,11 +127,11 @@ export default function ProductModal({ product, onClose }) {
             </div>
 
             {/* التفاصيل */}
-            <div className="p-5 sm:p-7 lg:p-9">
+            <div className="p-5 pb-6 sm:p-7 lg:p-9">
               <p className="text-[13px] text-gold-600">{product.brand}</p>
               <h2
                 id="product-modal-title"
-                className="mt-2 text-[26px] leading-10 text-ink-900 sm:text-[32px]"
+                className="mt-1.5 text-[26px] leading-[1.35] text-ink-900 sm:text-[32px]"
               >
                 {product.name}
               </h2>
@@ -141,7 +141,7 @@ export default function ProductModal({ product, onClose }) {
                   {formatPrice(product.price)}
                 </span>
                 {product.oldPrice && (
-                  <span className="text-[15px] text-ink-300 line-through">
+                  <span className="text-[15px] text-ink-400 line-through">
                     {formatPrice(product.oldPrice)}
                   </span>
                 )}
@@ -169,17 +169,17 @@ export default function ProductModal({ product, onClose }) {
                 </span>
               </div>
 
-              <p className="mt-6 text-[15px] leading-8 text-ink-500">{product.description}</p>
+              <p className="body-text mt-5 text-[15px] text-ink-500">{product.description}</p>
 
-              <div className="mt-7 border-t border-ink-900/[0.08] pt-6">
+              <div className="mt-6 border-t border-ink-900/[0.08] pt-5">
                 <h3 className="text-[14px] font-medium text-ink-900">الهرم العطري</h3>
-                <FragranceNotes notes={product.notes} className="mt-5" />
+                <FragranceNotes notes={product.notes} className="mt-4" />
               </div>
 
-              <dl className="mt-7 grid grid-cols-2 gap-px overflow-hidden rounded-[3px] border border-ink-900/[0.08] bg-ink-900/[0.08]">
+              <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-[3px] border border-ink-900/[0.08] bg-ink-900/[0.08]">
                 {meta.map((item) => (
                   <div key={item.label} className="bg-ivory-50 px-4 py-3.5">
-                    <dt className="text-[12px] text-ink-300">{item.label}</dt>
+                    <dt className="text-[12px] text-ink-400">{item.label}</dt>
                     <dd
                       className="mt-1 text-[14px] text-ink-800"
                       dir={item.ltr ? 'ltr' : undefined}
@@ -214,10 +214,10 @@ export default function ProductModal({ product, onClose }) {
             >
               <AmazonIcon size={19} className="text-gold-600" />
               <span>شراء عبر Amazon</span>
-              <ExternalLink size={14} aria-hidden="true" className="text-ink-300" />
+              <ExternalLink size={14} aria-hidden="true" className="text-ink-400" />
             </a>
           </div>
-          <p className="mt-3 text-center text-[12px] text-ink-300 sm:text-start">
+          <p className="mt-3 text-center text-[12px] text-ink-400 sm:text-start">
             {soldOut
               ? 'هذا العطر غير متوفر حالياً — راسلنا عبر واتساب لمعرفة موعد توفره.'
               : 'تفاصيل الشحن والدفع تعتمد على القناة التي تختارها.'}

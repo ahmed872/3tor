@@ -32,7 +32,7 @@ export default function Collection({
     <section
       id="collection"
       aria-labelledby="collection-title"
-      className="bg-ivory-100 py-20 sm:py-24 lg:py-28"
+      className="bg-ivory-100 section-y"
     >
       <div className="container-x">
         <SectionHeading
@@ -42,7 +42,7 @@ export default function Collection({
           subtitle={copy.subtitle}
         />
 
-        <Reveal className="mt-10 space-y-5 sm:mt-12">
+        <Reveal className="mt-8 space-y-4 sm:mt-10 sm:space-y-5">
           <SearchBar ref={searchRef} value={query} onChange={onQueryChange} />
           <FilterBar
             filter={filter}
@@ -53,7 +53,7 @@ export default function Collection({
         </Reveal>
 
         <p
-          className="mt-8 border-t border-ink-900/[0.08] pt-5 text-[13px] text-ink-400"
+          className="mt-7 border-t border-ink-900/[0.08] pt-4 text-[13px] text-ink-400"
           role="status"
           aria-live="polite"
         >
@@ -64,9 +64,9 @@ export default function Collection({
             `عرض ${perfumeCount(results.length)} من أصل ${total}`}
         </p>
 
-        <div className="mt-8">
+        <div className="mt-6">
           {loading && (
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-9 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-11 lg:grid-cols-4">
               {Array.from({ length: 8 }).map((_, index) => (
                 <li key={index}>
                   <ProductSkeleton />
@@ -78,9 +78,9 @@ export default function Collection({
           {!loading && results.length === 0 && <EmptyState onReset={resetAll} />}
 
           {!loading && results.length > 0 && (
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-9 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-11 lg:grid-cols-4">
               {results.map((product, index) => (
-                <Reveal as="li" key={product.id} delay={(index % 4) * 70}>
+                <Reveal as="li" key={product.id} delay={(index % 4) * 55}>
                   <ProductCard product={product} onSelect={onSelectProduct} />
                 </Reveal>
               ))}

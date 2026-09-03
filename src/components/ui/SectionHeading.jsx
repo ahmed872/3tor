@@ -38,7 +38,7 @@ export default function SectionHeading({
         {subtitle && (
           <p
             className={cn(
-              'mt-4 text-[15px] leading-8 sm:text-base',
+              'body-text mt-4 text-[15px] sm:text-base',
               light ? 'text-ink-200' : 'text-ink-400',
             )}
           >

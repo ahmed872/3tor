@@ -223,6 +223,12 @@ function bottle(id, shapeKey, { showLabel = true, tone = '#FBF4E4' } = {}) {
 /* المشاهد / scenes                                                    */
 /* ------------------------------------------------------------------ */
 
+/** الارتفاع الكلي للزجاجة (جسم + عنق + غطاء) قبل التحجيم */
+const bottleHeight = (shapeKey) => {
+  const s = shapeDefs[shapeKey];
+  return Math.abs(s.top) + s.neckH + s.capH + 6;
+};
+
 function bottleScene({
   id,
   width = 800,
@@ -231,17 +237,19 @@ function bottleScene({
   liquid = 'amber',
   metal = 'gold',
   shape = 'flacon',
-  scale = 1,
+  fit = 0.72, // نسبة ارتفاع الزجاجة إلى ارتفاع الإطار — توحّد الحجم البصري بين الأشكال
   offsetX = 0,
   carton = false,
   showLabel = true,
   rings = false,
 }) {
+  // كل الأشكال تُحجَّم لتشغل النسبة نفسها من الإطار مهما اختلفت أبعادها الأصلية
+  const scale = (height * fit) / bottleHeight(shape);
   const sc = scenes[scene];
   const lq = liquids[liquid];
   const mt = metals[metal];
   const dark = scene === 'charcoal' || scene === 'ink';
-  const floorY = height * 0.84;
+  const floorY = height * 0.865;
   const cx = width / 2 + offsetX;
   const art = bottle(id, shape, { showLabel, tone: dark ? '#F0DFB6' : '#FDF8EC' });
   const shapeWidth = shapeDefs[shape].width;
@@ -260,7 +268,7 @@ function bottleScene({
   <path d="M 0 ${floorY} L ${width} ${floorY}" stroke="${sc.floor}" stroke-opacity="${dark ? 0.8 : 0.7}"/>
   ${
     carton
-      ? `<g transform="translate(${cx + 210 * scale} ${floorY}) scale(${scale})">
+      ? `<g transform="translate(${cx + (shapeWidth / 2 + 92) * scale} ${floorY}) scale(${scale})">
            <rect x="-82" y="-306" width="164" height="306" rx="2" fill="${mt.c}" opacity="0.14"/>
            <rect x="-82" y="-306" width="164" height="306" rx="2" fill="none" stroke="${mt.b}" stroke-opacity="0.5"/>
            <path d="M -18 -186 L 0 -168 L 18 -186 L 0 -204 Z" fill="none" stroke="${mt.b}" stroke-opacity="0.75" stroke-width="1.4"/>
@@ -299,14 +307,14 @@ const productArt = [
 
 for (const p of productArt) {
   const base = { liquid: p.liquid, metal: p.metal, shape: p.shape };
-  writeFileSync(out(`products/${p.slug}-1.svg`), bottleScene({ id: `${p.slug}1`, scene: 'ivory', scale: 1.32, ...base }));
+  writeFileSync(out(`products/${p.slug}-1.svg`), bottleScene({ id: `${p.slug}1`, scene: 'ivory', fit: 0.72, ...base }));
   writeFileSync(
     out(`products/${p.slug}-2.svg`),
-    bottleScene({ id: `${p.slug}2`, scene: 'charcoal', scale: 1.7, showLabel: false, rings: true, ...base }),
+    bottleScene({ id: `${p.slug}2`, scene: 'charcoal', fit: 0.9, showLabel: false, rings: true, ...base }),
   );
   writeFileSync(
     out(`products/${p.slug}-3.svg`),
-    bottleScene({ id: `${p.slug}3`, scene: 'sand', scale: 1.05, offsetX: -90, carton: true, ...base }),
+    bottleScene({ id: `${p.slug}3`, scene: 'sand', fit: 0.56, offsetX: -90, carton: true, ...base }),
   );
 }
 
@@ -330,7 +338,7 @@ for (const c of categoryArt) {
       liquid: c.liquid,
       metal: c.metal,
       shape: c.shape,
-      scale: 0.92,
+      fit: 0.6,
       showLabel: false,
     }),
   );
@@ -346,7 +354,7 @@ writeFileSync(
     liquid: 'amber',
     metal: 'gold',
     shape: 'arch',
-    scale: 1.45,
+    fit: 0.76,
     rings: true,
   }),
 );
@@ -361,7 +369,7 @@ writeFileSync(
     liquid: 'amber',
     metal: 'gold',
     shape: 'flacon',
-    scale: 1.25,
+    fit: 0.68,
     offsetX: -80,
     carton: true,
   }),

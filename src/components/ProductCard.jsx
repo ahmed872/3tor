@@ -1,4 +1,4 @@
-import { ArrowLeft, Plus } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import SmartImage from './ui/SmartImage';
 import { WhatsAppIcon } from './ui/Icons';
 import { availabilityLabels } from '../data/categories';
@@ -31,7 +31,7 @@ export default function ProductCard({ product, onSelect, priority = false }) {
           alt={`زجاجة عطر ${product.name} من ${product.brand}`}
           priority={priority}
           className="aspect-[4/5] w-full"
-          imgClassName="transition-transform duration-[900ms] ease-smooth group-hover:scale-[1.05]"
+          imgClassName="transition-transform duration-700 ease-smooth group-hover:scale-[1.05]"
         />
 
         <span
@@ -77,11 +77,11 @@ export default function ProductCard({ product, onSelect, priority = false }) {
 
       <div className="flex flex-1 flex-col pt-4">
         <div className="flex items-baseline justify-between gap-3">
-          <p className="truncate text-[12.5px] text-ink-400">{product.brand}</p>
-          <p className="shrink-0 text-[12.5px] text-ink-300">{product.size}</p>
+          <p className="truncate text-[12px] text-ink-400 sm:text-[12.5px]">{product.brand}</p>
+          <p className="shrink-0 text-[12px] text-ink-400 sm:text-[12.5px]">{product.size}</p>
         </div>
 
-        <h3 className="mt-1.5 text-[17px] leading-7 text-ink-900">
+        <h3 className="mt-1.5 text-[16px] leading-7 text-ink-900 sm:text-[17px]">
           <button
             type="button"
             onClick={() => onSelect(product)}
@@ -94,40 +94,32 @@ export default function ProductCard({ product, onSelect, priority = false }) {
         <p className="mt-1.5 line-clamp-1 text-[13px] leading-6 text-ink-400">{primaryNotes}</p>
 
         <div className="mt-auto flex items-end justify-between gap-3 border-t border-ink-900/[0.08] pt-4">
-          <p className="flex flex-wrap items-baseline gap-2">
+          <p className="flex min-w-0 flex-wrap items-baseline gap-x-2 gap-y-0.5">
             <span
               className={cn(
-                'text-[16px] font-medium',
+                'whitespace-nowrap text-[15px] font-medium sm:text-[16px]',
                 soldOut ? 'text-ink-400' : 'text-ink-900',
               )}
             >
               {formatPrice(product.price)}
             </span>
             {product.oldPrice && (
-              <span className="text-[13px] text-ink-300 line-through">
+              <span className="whitespace-nowrap text-[12.5px] text-ink-400 line-through">
                 {formatPrice(product.oldPrice)}
               </span>
             )}
           </p>
 
-          <div className="flex items-center gap-1.5">
+          <div className="flex shrink-0 items-center gap-1.5">
             <a
               href={productWhatsappLink(product)}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`الاستفسار عن عطر ${product.name} عبر واتساب`}
-              className="grid h-11 w-11 place-items-center rounded-[3px] border border-ink-900/10 text-ink-500 transition-colors duration-300 hover:border-[#1FA855]/50 hover:bg-[#1FA855]/[0.06] hover:text-[#1FA855]"
+              className="grid h-11 w-11 place-items-center rounded-[3px] border border-ink-900/10 text-ink-500 transition-colors duration-300 hover:border-whatsapp/50 hover:bg-whatsapp/[0.06] hover:text-whatsapp"
             >
               <WhatsAppIcon size={18} />
             </a>
-            <button
-              type="button"
-              onClick={() => onSelect(product)}
-              aria-label={`عرض تفاصيل عطر ${product.name}`}
-              className="grid h-11 w-11 place-items-center rounded-[3px] border border-ink-900/10 text-ink-500 transition-colors duration-300 hover:border-gold-400 hover:bg-gold-50 hover:text-ink-900 lg:hidden"
-            >
-              <Plus size={18} aria-hidden="true" />
-            </button>
           </div>
         </div>
       </div>

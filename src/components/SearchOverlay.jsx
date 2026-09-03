@@ -55,7 +55,7 @@ export default function SearchOverlay({ open, onClose, onSelectProduct, onSearch
               }}
               placeholder="ابحث باسم العطر، العلامة، أو الملاحظات..."
               aria-label="ابحث في المجموعة"
-              className="h-16 w-full border-0 bg-transparent text-[15px] text-ink-900 placeholder:text-ink-300 focus:outline-none"
+              className="h-16 w-full border-0 bg-transparent text-[15px] text-ink-900 placeholder:text-ink-400 focus:outline-none"
             />
             <button
               type="button"

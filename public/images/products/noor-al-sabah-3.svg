@@ -51,17 +51,17 @@
   <rect width="800" height="1000" fill="url(#bg-noor-al-sabah3)"/>
   <rect width="800" height="1000" fill="url(#glow-noor-al-sabah3)" opacity="0.7"/>
   
-  <rect y="840" width="800" height="160" fill="#CFBC9D" opacity="0.3"/>
-  <path d="M 0 840 L 800 840" stroke="#CFBC9D" stroke-opacity="0.7"/>
-  <g transform="translate(530.5 840) scale(1.05)">
+  <rect y="865" width="800" height="135" fill="#CFBC9D" opacity="0.3"/>
+  <path d="M 0 865 L 800 865" stroke="#CFBC9D" stroke-opacity="0.7"/>
+  <g transform="translate(566 865) scale(1.1428571428571428)">
            <rect x="-82" y="-306" width="164" height="306" rx="2" fill="#8A6B35" opacity="0.14"/>
            <rect x="-82" y="-306" width="164" height="306" rx="2" fill="none" stroke="#C7A461" stroke-opacity="0.5"/>
            <path d="M -18 -186 L 0 -168 L 18 -186 L 0 -204 Z" fill="none" stroke="#C7A461" stroke-opacity="0.75" stroke-width="1.4"/>
            <path d="M -34 -140 L 34 -140" stroke="#C7A461" stroke-opacity="0.35"/>
          </g>
-  <ellipse cx="310" cy="844" rx="180.6" ry="23.1"
+  <ellipse cx="310" cy="869" rx="196.57142857142856" ry="25.142857142857142"
            fill="#9E8B70" opacity="0.5" filter="url(#soft-noor-al-sabah3)"/>
-  <g mask="url(#reflect-noor-al-sabah3)" opacity="0.16" transform="translate(310 840) scale(1.05 -0.441)">
+  <g mask="url(#reflect-noor-al-sabah3)" opacity="0.16" transform="translate(310 865) scale(1.1428571428571428 -0.48)">
     
     <clipPath id="clip-noor-al-sabah3"><path d="M -132 0 L -132 -196 Q -132 -300 0 -352 Q 132 -300 132 -196 L 132 0 Z"/></clipPath>
 
@@ -100,7 +100,7 @@
     <path d="M -22 -124 L 22 -124" stroke="#FDF8EC" stroke-opacity="0.45" stroke-width="1.2"/>
   </g>
   </g>
-  <g transform="translate(310 840) scale(1.05)">
+  <g transform="translate(310 865) scale(1.1428571428571428)">
     
     <clipPath id="clip-noor-al-sabah3"><path d="M -132 0 L -132 -196 Q -132 -300 0 -352 Q 132 -300 132 -196 L 132 0 Z"/></clipPath>
 

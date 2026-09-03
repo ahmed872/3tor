@@ -50,14 +50,14 @@
   </defs>
   <rect width="900" height="1125" fill="url(#bg-hero)"/>
   <rect width="900" height="1125" fill="url(#glow-hero)" opacity="0.45"/>
-  <circle cx="450" cy="582.5" r="391.5" fill="none" stroke="#C2A16B" stroke-opacity="0.28"/>
-         <circle cx="450" cy="582.5" r="478.5" fill="none" stroke="#C2A16B" stroke-opacity="0.12"/>
-  <rect y="945" width="900" height="180" fill="#2A2B31" opacity="0.45"/>
-  <path d="M 0 945 L 900 945" stroke="#2A2B31" stroke-opacity="0.8"/>
+  <circle cx="450" cy="536.9005102040817" r="471.12244897959187" fill="none" stroke="#C2A16B" stroke-opacity="0.28"/>
+         <circle cx="450" cy="536.9005102040817" r="575.8163265306123" fill="none" stroke="#C2A16B" stroke-opacity="0.12"/>
+  <rect y="973.125" width="900" height="151.875" fill="#2A2B31" opacity="0.45"/>
+  <path d="M 0 973.125 L 900 973.125" stroke="#2A2B31" stroke-opacity="0.8"/>
   
-  <ellipse cx="450" cy="949" rx="249.4" ry="31.9"
+  <ellipse cx="450" cy="977.125" rx="300.12244897959187" ry="38.38775510204082"
            fill="#050506" opacity="0.65" filter="url(#soft-hero)"/>
-  <g mask="url(#reflect-hero)" opacity="0.16" transform="translate(450 945) scale(1.45 -0.609)">
+  <g mask="url(#reflect-hero)" opacity="0.16" transform="translate(450 973.125) scale(1.7448979591836735 -0.7328571428571429)">
     
     <clipPath id="clip-hero"><path d="M -132 0 L -132 -196 Q -132 -300 0 -352 Q 132 -300 132 -196 L 132 0 Z"/></clipPath>
 
@@ -96,7 +96,7 @@
     <path d="M -22 -124 L 22 -124" stroke="#F0DFB6" stroke-opacity="0.45" stroke-width="1.2"/>
   </g>
   </g>
-  <g transform="translate(450 945) scale(1.45)">
+  <g transform="translate(450 973.125) scale(1.7448979591836735)">
     
     <clipPath id="clip-hero"><path d="M -132 0 L -132 -196 Q -132 -300 0 -352 Q 132 -300 132 -196 L 132 0 Z"/></clipPath>
 

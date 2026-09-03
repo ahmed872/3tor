@@ -13,7 +13,7 @@ export default function FeaturedProducts({ onSelectProduct }) {
   const { featured: copy } = content;
 
   return (
-    <section id="featured" aria-labelledby="featured-title" className="bg-ivory-100 py-20 sm:py-24 lg:py-28">
+    <section id="featured" aria-labelledby="featured-title" className="bg-ivory-100 section-y">
       <div className="container-x">
         <SectionHeading
           id="featured-title"
@@ -37,20 +37,20 @@ export default function FeaturedProducts({ onSelectProduct }) {
         />
       </div>
 
-      <div className="container-x mt-12 sm:mt-14">
-        <ul className="no-scrollbar -mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-2 sm:-mx-8 sm:px-8 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:gap-y-14 lg:overflow-visible lg:px-0">
+      <div className="container-x mt-9 sm:mt-11">
+        <ul className="no-scrollbar -mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-2 sm:-mx-8 sm:px-8 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12 lg:overflow-visible lg:px-0">
           {featured.map((product, index) => (
             <Reveal
               as="li"
               key={product.id}
-              delay={(index % 3) * 90}
+              delay={(index % 3) * 70}
               className="w-[74vw] shrink-0 snap-start sm:w-[46%] lg:w-auto lg:shrink"
             >
               <ProductCard product={product} onSelect={onSelectProduct} priority={index < 3} />
             </Reveal>
           ))}
         </ul>
-        <p className="mt-5 text-center text-[12.5px] text-ink-300 lg:hidden">
+        <p className="mt-5 text-center text-[12.5px] text-ink-400 lg:hidden">
           اسحب لعرض المزيد من المختارات
         </p>
       </div>

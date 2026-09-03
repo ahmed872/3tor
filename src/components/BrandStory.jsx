@@ -13,9 +13,9 @@ export default function BrandStory() {
     <section
       id="about"
       aria-labelledby="about-title"
-      className="border-t border-ink-900/[0.07] bg-ivory-50 py-20 sm:py-24 lg:py-28"
+      className="border-t border-ink-900/[0.07] bg-ivory-50 section-y"
     >
-      <div className="container-x grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+      <div className="container-x grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
         <Reveal className="lg:col-span-5">
           <div className="relative">
             <div
@@ -37,14 +37,14 @@ export default function BrandStory() {
               {story.title}
             </h2>
             {story.paragraphs.map((paragraph) => (
-              <p key={paragraph} className="mt-5 text-[15px] leading-9 text-ink-500 sm:text-base">
+              <p key={paragraph} className="body-lead mt-5 text-[15px] text-ink-500 sm:text-base">
                 {paragraph}
               </p>
             ))}
           </Reveal>
 
           <Reveal delay={160}>
-            <ul className="mt-8 space-y-3.5 border-t border-ink-900/[0.08] pt-8">
+            <ul className="mt-7 space-y-3.5 border-t border-ink-900/[0.08] pt-7">
               {story.points.map((point) => (
                 <li key={point} className="flex items-start gap-3 text-[15px] text-ink-700">
                   <span
@@ -61,7 +61,7 @@ export default function BrandStory() {
             <button
               type="button"
               onClick={() => scrollToSection('collection')}
-              className="btn-primary mt-9 px-8"
+              className="btn-primary mt-8 px-8"
             >
               {story.cta}
             </button>

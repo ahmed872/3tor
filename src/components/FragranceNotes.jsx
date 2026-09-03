@@ -26,7 +26,7 @@ export default function FragranceNotes({ notes, className }) {
               />
               <p className="flex items-baseline gap-2.5">
                 <span className="text-[13px] font-medium text-ink-900">{label}</span>
-                <span className="text-[12px] text-ink-300">{hint}</span>
+                <span className="text-[12px] text-ink-400">{hint}</span>
               </p>
               <p className="mt-1.5 text-[14px] leading-7 text-ink-500">{values.join(' · ')}</p>
             </li>

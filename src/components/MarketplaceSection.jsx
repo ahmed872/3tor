@@ -26,7 +26,7 @@ export default function MarketplaceSection() {
     <section
       id="marketplace"
       aria-labelledby="marketplace-title"
-      className="relative isolate overflow-hidden bg-ink-950 py-20 sm:py-24 lg:py-28"
+      className="relative isolate overflow-hidden bg-ink-950 section-y"
     >
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_80%_0%,#26272D_0%,#0E0E11_60%,#08080A_100%)]" />
@@ -39,10 +39,10 @@ export default function MarketplaceSection() {
           <h2 id="marketplace-title" className="heading-lg mt-4 font-medium text-ivory-100">
             {marketplace.title}
           </h2>
-          <p className="mt-4 text-[15px] leading-8 text-ink-200">{marketplace.subtitle}</p>
+          <p className="body-text mt-4 text-[15px] text-ink-200">{marketplace.subtitle}</p>
         </Reveal>
 
-        <ul className="mx-auto mt-12 grid max-w-4xl gap-4 sm:gap-5 md:grid-cols-2 lg:mt-14">
+        <ul className="mx-auto mt-9 grid max-w-4xl gap-4 sm:mt-11 sm:gap-5 md:grid-cols-2">
           {marketplace.channels.map((channel, index) => {
             const props = channelProps[channel.id];
             return (
@@ -57,7 +57,7 @@ export default function MarketplaceSection() {
                     {props.icon}
                   </span>
                   <h3 className="mt-6 text-[19px] text-ivory-100">{channel.title}</h3>
-                  <p className="mt-3 text-[14px] leading-7 text-ink-200">{channel.description}</p>
+                  <p className="mt-3 text-[14px] leading-[1.8] text-ink-200">{channel.description}</p>
                   <span className="mt-7 inline-flex items-center gap-2 text-[14px] text-gold-300">
                     <span>{channel.action}</span>
                     <ArrowLeft
@@ -72,7 +72,7 @@ export default function MarketplaceSection() {
           })}
         </ul>
 
-        <p className="mt-8 text-center text-[13px] text-ink-300">{marketplace.note}</p>
+        <p className="mt-7 text-center text-[13px] text-ink-300">{marketplace.note}</p>
       </div>
     </section>
   );

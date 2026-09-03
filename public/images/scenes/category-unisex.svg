@@ -51,12 +51,12 @@
   <rect width="640" height="800" fill="url(#bg-catunisex)"/>
   <rect width="640" height="800" fill="url(#glow-catunisex)" opacity="0.7"/>
   
-  <rect y="672" width="640" height="128" fill="#CFBC9D" opacity="0.3"/>
-  <path d="M 0 672 L 640 672" stroke="#CFBC9D" stroke-opacity="0.7"/>
+  <rect y="692" width="640" height="108" fill="#CFBC9D" opacity="0.3"/>
+  <path d="M 0 692 L 640 692" stroke="#CFBC9D" stroke-opacity="0.7"/>
   
-  <ellipse cx="320" cy="676" rx="174.8" ry="20.240000000000002"
+  <ellipse cx="320" cy="696" rx="188.4297520661157" ry="21.81818181818182"
            fill="#9E8B70" opacity="0.5" filter="url(#soft-catunisex)"/>
-  <g mask="url(#reflect-catunisex)" opacity="0.16" transform="translate(320 672) scale(0.92 -0.3864)">
+  <g mask="url(#reflect-catunisex)" opacity="0.16" transform="translate(320 692) scale(0.9917355371900827 -0.41652892561983473)">
     
     <clipPath id="clip-catunisex"><path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z"/></clipPath>
 
@@ -88,7 +88,7 @@
 
     
   </g>
-  <g transform="translate(320 672) scale(0.92)">
+  <g transform="translate(320 692) scale(0.9917355371900827)">
     
     <clipPath id="clip-catunisex"><path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z"/></clipPath>
 

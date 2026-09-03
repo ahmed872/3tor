@@ -50,14 +50,14 @@
   </defs>
   <rect width="800" height="1000" fill="url(#bg-layali-oud2)"/>
   <rect width="800" height="1000" fill="url(#glow-layali-oud2)" opacity="0.45"/>
-  <circle cx="400" cy="415" r="459" fill="none" stroke="#C2A16B" stroke-opacity="0.28"/>
-         <circle cx="400" cy="415" r="561" fill="none" stroke="#C2A16B" stroke-opacity="0.12"/>
-  <rect y="840" width="800" height="160" fill="#212226" opacity="0.45"/>
-  <path d="M 0 840 L 800 840" stroke="#212226" stroke-opacity="0.8"/>
+  <circle cx="400" cy="400.12396694214874" r="502.06611570247935" fill="none" stroke="#C2A16B" stroke-opacity="0.28"/>
+         <circle cx="400" cy="400.12396694214874" r="613.6363636363636" fill="none" stroke="#C2A16B" stroke-opacity="0.12"/>
+  <rect y="865" width="800" height="135" fill="#212226" opacity="0.45"/>
+  <path d="M 0 865 L 800 865" stroke="#212226" stroke-opacity="0.8"/>
   
-  <ellipse cx="400" cy="844" rx="323" ry="37.4"
+  <ellipse cx="400" cy="869" rx="353.3057851239669" ry="40.90909090909091"
            fill="#040405" opacity="0.65" filter="url(#soft-layali-oud2)"/>
-  <g mask="url(#reflect-layali-oud2)" opacity="0.16" transform="translate(400 840) scale(1.7 -0.714)">
+  <g mask="url(#reflect-layali-oud2)" opacity="0.16" transform="translate(400 865) scale(1.859504132231405 -0.78099173553719)">
     
     <clipPath id="clip-layali-oud2"><path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z"/></clipPath>
 
@@ -89,7 +89,7 @@
 
     
   </g>
-  <g transform="translate(400 840) scale(1.7)">
+  <g transform="translate(400 865) scale(1.859504132231405)">
     
     <clipPath id="clip-layali-oud2"><path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z"/></clipPath>
 

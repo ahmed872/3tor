@@ -50,14 +50,14 @@
   </defs>
   <rect width="800" height="1000" fill="url(#bg-sada-al-arz2)"/>
   <rect width="800" height="1000" fill="url(#glow-sada-al-arz2)" opacity="0.45"/>
-  <circle cx="400" cy="415" r="459" fill="none" stroke="#C2A16B" stroke-opacity="0.28"/>
-         <circle cx="400" cy="415" r="561" fill="none" stroke="#C2A16B" stroke-opacity="0.12"/>
-  <rect y="840" width="800" height="160" fill="#212226" opacity="0.45"/>
-  <path d="M 0 840 L 800 840" stroke="#212226" stroke-opacity="0.8"/>
+  <circle cx="400" cy="471.6433566433567" r="424.8251748251748" fill="none" stroke="#C2A16B" stroke-opacity="0.28"/>
+         <circle cx="400" cy="471.6433566433567" r="519.2307692307692" fill="none" stroke="#C2A16B" stroke-opacity="0.12"/>
+  <rect y="865" width="800" height="135" fill="#212226" opacity="0.45"/>
+  <path d="M 0 865 L 800 865" stroke="#212226" stroke-opacity="0.8"/>
   
-  <ellipse cx="400" cy="844" rx="244.79999999999998" ry="37.4"
+  <ellipse cx="400" cy="869" rx="226.57342657342656" ry="34.61538461538461"
            fill="#040405" opacity="0.65" filter="url(#soft-sada-al-arz2)"/>
-  <g mask="url(#reflect-sada-al-arz2)" opacity="0.16" transform="translate(400 840) scale(1.7 -0.714)">
+  <g mask="url(#reflect-sada-al-arz2)" opacity="0.16" transform="translate(400 865) scale(1.5734265734265733 -0.6608391608391607)">
     
     <clipPath id="clip-sada-al-arz2"><path d="M -104 -12 L -104 -394 Q -104 -410 -88 -410 L 88 -410 Q 104 -410 104 -394 L 104 -12 Q 104 0 88 0 L -88 0 Q -104 0 -104 -12 Z"/></clipPath>
 
@@ -89,7 +89,7 @@
 
     
   </g>
-  <g transform="translate(400 840) scale(1.7)">
+  <g transform="translate(400 865) scale(1.5734265734265733)">
     
     <clipPath id="clip-sada-al-arz2"><path d="M -104 -12 L -104 -394 Q -104 -410 -88 -410 L 88 -410 Q 104 -410 104 -394 L 104 -12 Q 104 0 88 0 L -88 0 Q -104 0 -104 -12 Z"/></clipPath>
 

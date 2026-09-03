@@ -11,7 +11,7 @@ const SearchBar = forwardRef(function SearchBar({ value, onChange, id = 'collect
       <Search
         size={18}
         aria-hidden="true"
-        className="pointer-events-none absolute inset-y-0 start-4 my-auto text-ink-300"
+        className="pointer-events-none absolute inset-y-0 start-4 my-auto text-ink-400"
       />
       <input
         id={id}
@@ -20,7 +20,7 @@ const SearchBar = forwardRef(function SearchBar({ value, onChange, id = 'collect
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder="ابحث باسم العطر، العلامة، أو الملاحظات..."
-        className="h-[52px] w-full rounded-[3px] border border-ink-900/10 bg-ivory-50 py-3.5 pe-12 ps-12 text-[15px] text-ink-900 transition-colors duration-300 placeholder:text-ink-300 hover:border-ink-900/20 focus:border-gold-400 focus:outline-none focus:ring-1 focus:ring-gold-400/40"
+        className="h-[52px] w-full rounded-[3px] border border-ink-900/10 bg-ivory-50 py-3.5 pe-12 ps-12 text-[15px] text-ink-900 transition-colors duration-300 placeholder:text-ink-400 hover:border-ink-900/20 focus:border-gold-400 focus:outline-none focus:ring-1 focus:ring-gold-400/40"
       />
       {value && (
         <button

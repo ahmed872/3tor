@@ -51,12 +51,12 @@
   <rect width="800" height="1000" fill="url(#bg-bahar-al-ain1)"/>
   <rect width="800" height="1000" fill="url(#glow-bahar-al-ain1)" opacity="0.7"/>
   
-  <rect y="840" width="800" height="160" fill="#DCD1BE" opacity="0.3"/>
-  <path d="M 0 840 L 800 840" stroke="#DCD1BE" stroke-opacity="0.7"/>
+  <rect y="865" width="800" height="135" fill="#DCD1BE" opacity="0.3"/>
+  <path d="M 0 865 L 800 865" stroke="#DCD1BE" stroke-opacity="0.7"/>
   
-  <ellipse cx="400" cy="844" rx="190.08" ry="29.040000000000003"
+  <ellipse cx="400" cy="869" rx="181.25874125874125" ry="27.692307692307693"
            fill="#B3A68F" opacity="0.5" filter="url(#soft-bahar-al-ain1)"/>
-  <g mask="url(#reflect-bahar-al-ain1)" opacity="0.16" transform="translate(400 840) scale(1.32 -0.5544)">
+  <g mask="url(#reflect-bahar-al-ain1)" opacity="0.16" transform="translate(400 865) scale(1.2587412587412588 -0.5286713286713287)">
     
     <clipPath id="clip-bahar-al-ain1"><path d="M -104 -12 L -104 -394 Q -104 -410 -88 -410 L 88 -410 Q 104 -410 104 -394 L 104 -12 Q 104 0 88 0 L -88 0 Q -104 0 -104 -12 Z"/></clipPath>
 
@@ -95,7 +95,7 @@
     <path d="M -22 -204 L 22 -204" stroke="#FDF8EC" stroke-opacity="0.45" stroke-width="1.2"/>
   </g>
   </g>
-  <g transform="translate(400 840) scale(1.32)">
+  <g transform="translate(400 865) scale(1.2587412587412588)">
     
     <clipPath id="clip-bahar-al-ain1"><path d="M -104 -12 L -104 -394 Q -104 -410 -88 -410 L 88 -410 Q 104 -410 104 -394 L 104 -12 Q 104 0 88 0 L -88 0 Q -104 0 -104 -12 Z"/></clipPath>
 

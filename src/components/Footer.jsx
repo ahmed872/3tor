@@ -17,12 +17,12 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-ink-950 pb-[calc(84px+env(safe-area-inset-bottom))] pt-16 sm:pt-20 lg:pb-0">
+    <footer className="bg-ink-950 pb-[calc(76px+env(safe-area-inset-bottom))] pt-14 sm:pt-16 lg:pb-0">
       <div className="container-x">
-        <div className="grid gap-12 pb-14 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
+        <div className="grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
             <BrandMark tone="light" />
-            <p className="mt-6 max-w-sm text-[14px] leading-8 text-ink-300">{content.footer.about}</p>
+            <p className="mt-5 max-w-sm text-[14px] leading-[1.85] text-ink-300">{content.footer.about}</p>
 
             {socials.length > 0 && (
               <ul className="mt-7 flex items-center gap-3">
@@ -45,9 +45,9 @@ export default function Footer() {
 
           <nav aria-label="روابط التذييل" className="lg:col-span-3">
             <h2 className="text-[14px] font-medium text-ivory-100">تصفّح</h2>
-            <ul className="mt-5 space-y-3.5">
+            <ul className="mt-5 columns-2 gap-x-6">
               {navLinks.map((link) => (
-                <li key={link.id}>
+                <li key={link.id} className="mb-3.5 break-inside-avoid">
                   <a
                     href={`#${link.id}`}
                     onClick={(event) => {
@@ -99,11 +99,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-ivory-100/10 py-7 text-center sm:flex-row sm:text-start">
-          <p className="text-[13px] text-ink-400">
+        <div className="flex flex-col items-center justify-between gap-3 border-t border-ivory-100/10 py-6 text-center sm:flex-row sm:text-start">
+          <p className="text-[13px] text-ink-300">
             © {year} {siteConfig.brandName} — {content.footer.rightsLabel}
           </p>
-          <p className="text-[13px] text-ink-400">{content.footer.builtLabel}</p>
+          <p className="text-[13px] text-ink-300">{content.footer.builtLabel}</p>
         </div>
       </div>
     </footer>

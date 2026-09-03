@@ -18,7 +18,7 @@ export default function TrustSection() {
     <section
       id="trust"
       aria-labelledby="trust-title"
-      className="bg-ivory-100 py-20 sm:py-24 lg:py-28"
+      className="bg-ivory-100 section-y"
     >
       <div className="container-x">
         <SectionHeading
@@ -29,14 +29,14 @@ export default function TrustSection() {
           align="center"
         />
 
-        <ul className="mt-12 grid gap-px overflow-hidden rounded-[4px] border border-ink-900/[0.08] bg-ink-900/[0.08] sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
+        <ul className="mt-9 grid gap-px overflow-hidden rounded-[4px] border border-ink-900/[0.08] bg-ink-900/[0.08] sm:mt-11 sm:grid-cols-2 lg:grid-cols-4">
           {trust.items.map((item, index) => {
             const Icon = ICONS[item.icon] || Sparkles;
             return (
               <Reveal
                 as="li"
                 key={item.title}
-                delay={index * 80}
+                delay={index * 65}
                 className="flex flex-col bg-ivory-50 p-7 lg:p-8"
               >
                 <span
@@ -46,7 +46,7 @@ export default function TrustSection() {
                   <Icon size={20} strokeWidth={1.6} />
                 </span>
                 <h3 className="mt-6 text-[17px] text-ink-900">{item.title}</h3>
-                <p className="mt-2.5 text-[14px] leading-7 text-ink-400">{item.description}</p>
+                <p className="mt-2.5 text-[14px] leading-[1.8] text-ink-400">{item.description}</p>
               </Reveal>
             );
           })}

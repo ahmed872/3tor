@@ -51,12 +51,12 @@
   <rect width="640" height="800" fill="url(#bg-catoriental)"/>
   <rect width="640" height="800" fill="url(#glow-catoriental)" opacity="0.45"/>
   
-  <rect y="672" width="640" height="128" fill="#2A2B31" opacity="0.45"/>
-  <path d="M 0 672 L 640 672" stroke="#2A2B31" stroke-opacity="0.8"/>
+  <rect y="692" width="640" height="108" fill="#2A2B31" opacity="0.45"/>
+  <path d="M 0 692 L 640 692" stroke="#2A2B31" stroke-opacity="0.8"/>
   
-  <ellipse cx="320" cy="676" rx="158.24" ry="20.240000000000002"
+  <ellipse cx="320" cy="696" rx="168.48979591836735" ry="21.551020408163264"
            fill="#050506" opacity="0.65" filter="url(#soft-catoriental)"/>
-  <g mask="url(#reflect-catoriental)" opacity="0.16" transform="translate(320 672) scale(0.92 -0.3864)">
+  <g mask="url(#reflect-catoriental)" opacity="0.16" transform="translate(320 692) scale(0.9795918367346939 -0.4114285714285714)">
     
     <clipPath id="clip-catoriental"><path d="M -132 0 L -132 -196 Q -132 -300 0 -352 Q 132 -300 132 -196 L 132 0 Z"/></clipPath>
 
@@ -88,7 +88,7 @@
 
     
   </g>
-  <g transform="translate(320 672) scale(0.92)">
+  <g transform="translate(320 692) scale(0.9795918367346939)">
     
     <clipPath id="clip-catoriental"><path d="M -132 0 L -132 -196 Q -132 -300 0 -352 Q 132 -300 132 -196 L 132 0 Z"/></clipPath>
 

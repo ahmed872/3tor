@@ -12,7 +12,7 @@ export default function EmptyState({ onReset }) {
         <SearchX size={22} />
       </span>
       <p className="mt-5 text-[18px] text-ink-900">{content.states.emptyTitle}</p>
-      <p className="mt-2 max-w-sm text-[14px] leading-7 text-ink-400">{content.states.emptyBody}</p>
+      <p className="mt-2 max-w-sm text-[14px] leading-[1.8] text-ink-400">{content.states.emptyBody}</p>
       <button type="button" onClick={onReset} className="btn-outline mt-7">
         {content.states.emptyAction}
       </button>

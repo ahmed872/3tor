@@ -50,14 +50,14 @@
   </defs>
   <rect width="800" height="1000" fill="url(#bg-oud-malaki2)"/>
   <rect width="800" height="1000" fill="url(#glow-oud-malaki2)" opacity="0.45"/>
-  <circle cx="400" cy="415" r="459" fill="none" stroke="#C2A16B" stroke-opacity="0.28"/>
-         <circle cx="400" cy="415" r="561" fill="none" stroke="#C2A16B" stroke-opacity="0.12"/>
-  <rect y="840" width="800" height="160" fill="#212226" opacity="0.45"/>
-  <path d="M 0 840 L 800 840" stroke="#212226" stroke-opacity="0.8"/>
+  <circle cx="400" cy="346.56682027649765" r="559.9078341013825" fill="none" stroke="#C2A16B" stroke-opacity="0.28"/>
+         <circle cx="400" cy="346.56682027649765" r="684.331797235023" fill="none" stroke="#C2A16B" stroke-opacity="0.12"/>
+  <rect y="865" width="800" height="135" fill="#212226" opacity="0.45"/>
+  <path d="M 0 865 L 800 865" stroke="#212226" stroke-opacity="0.8"/>
   
-  <ellipse cx="400" cy="844" rx="346.8" ry="37.4"
+  <ellipse cx="400" cy="869" rx="423.0414746543779" ry="45.622119815668206"
            fill="#040405" opacity="0.65" filter="url(#soft-oud-malaki2)"/>
-  <g mask="url(#reflect-oud-malaki2)" opacity="0.16" transform="translate(400 840) scale(1.7 -0.714)">
+  <g mask="url(#reflect-oud-malaki2)" opacity="0.16" transform="translate(400 865) scale(2.0737327188940093 -0.8709677419354839)">
     
     <clipPath id="clip-oud-malaki2"><path d="M 0 -18 C -108 -18 -164 -96 -164 -178 C -164 -262 -96 -324 0 -324 C 96 -324 164 -262 164 -178 C 164 -96 108 -18 0 -18 Z"/></clipPath>
 
@@ -89,7 +89,7 @@
 
     
   </g>
-  <g transform="translate(400 840) scale(1.7)">
+  <g transform="translate(400 865) scale(2.0737327188940093)">
     
     <clipPath id="clip-oud-malaki2"><path d="M 0 -18 C -108 -18 -164 -96 -164 -178 C -164 -262 -96 -324 0 -324 C 96 -324 164 -262 164 -178 C 164 -96 108 -18 0 -18 Z"/></clipPath>
 

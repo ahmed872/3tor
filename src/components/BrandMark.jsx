@@ -37,7 +37,7 @@ export default function BrandMark({ tone = 'dark', className, compact = false })
           <span
             className={cn(
               'latin-caps mt-1.5 text-[9px] transition-colors duration-500',
-              light ? 'text-gold-300/80' : 'text-gold-600/80',
+              light ? 'text-gold-300/85' : 'text-gold-700',
             )}
           >
             {siteConfig.brandNameLatin}

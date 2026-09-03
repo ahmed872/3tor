@@ -51,17 +51,17 @@
   <rect width="900" height="1125" fill="url(#bg-story)"/>
   <rect width="900" height="1125" fill="url(#glow-story)" opacity="0.7"/>
   
-  <rect y="945" width="900" height="180" fill="#CFBC9D" opacity="0.3"/>
-  <path d="M 0 945 L 900 945" stroke="#CFBC9D" stroke-opacity="0.7"/>
-  <g transform="translate(632.5 945) scale(1.25)">
+  <rect y="973.125" width="900" height="151.875" fill="#CFBC9D" opacity="0.3"/>
+  <path d="M 0 973.125 L 900 973.125" stroke="#CFBC9D" stroke-opacity="0.7"/>
+  <g transform="translate(752.5 973.125) scale(1.5805785123966942)">
            <rect x="-82" y="-306" width="164" height="306" rx="2" fill="#8A6B35" opacity="0.14"/>
            <rect x="-82" y="-306" width="164" height="306" rx="2" fill="none" stroke="#C7A461" stroke-opacity="0.5"/>
            <path d="M -18 -186 L 0 -168 L 18 -186 L 0 -204 Z" fill="none" stroke="#C7A461" stroke-opacity="0.75" stroke-width="1.4"/>
            <path d="M -34 -140 L 34 -140" stroke="#C7A461" stroke-opacity="0.35"/>
          </g>
-  <ellipse cx="370" cy="949" rx="237.5" ry="27.5"
+  <ellipse cx="370" cy="977.125" rx="300.3099173553719" ry="34.77272727272727"
            fill="#9E8B70" opacity="0.5" filter="url(#soft-story)"/>
-  <g mask="url(#reflect-story)" opacity="0.16" transform="translate(370 945) scale(1.25 -0.525)">
+  <g mask="url(#reflect-story)" opacity="0.16" transform="translate(370 973.125) scale(1.5805785123966942 -0.6638429752066115)">
     
     <clipPath id="clip-story"><path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z"/></clipPath>
 
@@ -100,7 +100,7 @@
     <path d="M -22 -164 L 22 -164" stroke="#FDF8EC" stroke-opacity="0.45" stroke-width="1.2"/>
   </g>
   </g>
-  <g transform="translate(370 945) scale(1.25)">
+  <g transform="translate(370 973.125) scale(1.5805785123966942)">
     
     <clipPath id="clip-story"><path d="M -150 -18 L -150 -318 Q -150 -352 -118 -356 L 118 -356 Q 150 -352 150 -318 L 150 -18 Q 150 0 128 0 L -128 0 Q -150 0 -150 -18 Z"/></clipPath>
 

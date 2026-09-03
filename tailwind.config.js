@@ -24,6 +24,12 @@ export default {
           300: '#E3DCCE',
           400: '#D2C8B5',
         },
+        whatsapp: {
+          DEFAULT: '#0E844A',
+          dark: '#0B6E3C',
+          darker: '#095C32',
+          tint: '#0E844A',
+        },
         gold: {
           DEFAULT: '#C2A16B',
           50: '#F8F2E7',
@@ -76,7 +82,7 @@ export default {
         },
       },
       animation: {
-        'fade-up': 'fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both',
+        'fade-up': 'fade-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both',
         'fade-in': 'fade-in 0.5s ease-out both',
         'scale-in': 'scale-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) both',
         'slide-down': 'slide-down 0.28s cubic-bezier(0.22, 1, 0.36, 1) both',

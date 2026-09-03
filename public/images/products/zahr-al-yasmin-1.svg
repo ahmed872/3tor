@@ -51,12 +51,12 @@
   <rect width="800" height="1000" fill="url(#bg-zahr-al-yasmin1)"/>
   <rect width="800" height="1000" fill="url(#glow-zahr-al-yasmin1)" opacity="0.7"/>
   
-  <rect y="840" width="800" height="160" fill="#DCD1BE" opacity="0.3"/>
-  <path d="M 0 840 L 800 840" stroke="#DCD1BE" stroke-opacity="0.7"/>
+  <rect y="865" width="800" height="135" fill="#DCD1BE" opacity="0.3"/>
+  <path d="M 0 865 L 800 865" stroke="#DCD1BE" stroke-opacity="0.7"/>
   
-  <ellipse cx="400" cy="844" rx="227.04000000000002" ry="29.040000000000003"
+  <ellipse cx="400" cy="869" rx="252.73469387755102" ry="32.3265306122449"
            fill="#B3A68F" opacity="0.5" filter="url(#soft-zahr-al-yasmin1)"/>
-  <g mask="url(#reflect-zahr-al-yasmin1)" opacity="0.16" transform="translate(400 840) scale(1.32 -0.5544)">
+  <g mask="url(#reflect-zahr-al-yasmin1)" opacity="0.16" transform="translate(400 865) scale(1.469387755102041 -0.6171428571428571)">
     
     <clipPath id="clip-zahr-al-yasmin1"><path d="M -132 0 L -132 -196 Q -132 -300 0 -352 Q 132 -300 132 -196 L 132 0 Z"/></clipPath>
 
@@ -95,7 +95,7 @@
     <path d="M -22 -124 L 22 -124" stroke="#FDF8EC" stroke-opacity="0.45" stroke-width="1.2"/>
   </g>
   </g>
-  <g transform="translate(400 840) scale(1.32)">
+  <g transform="translate(400 865) scale(1.469387755102041)">
     
     <clipPath id="clip-zahr-al-yasmin1"><path d="M -132 0 L -132 -196 Q -132 -300 0 -352 Q 132 -300 132 -196 L 132 0 Z"/></clipPath>
 
