@@ -15,7 +15,11 @@ export default function TrustSection() {
   const { trust } = content;
 
   return (
-    <section aria-labelledby="trust-title" className="bg-ivory-100 py-20 sm:py-24 lg:py-28">
+    <section
+      id="trust"
+      aria-labelledby="trust-title"
+      className="bg-ivory-100 py-20 sm:py-24 lg:py-28"
+    >
       <div className="container-x">
         <SectionHeading
           id="trust-title"

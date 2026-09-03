@@ -24,6 +24,7 @@ export default function MarketplaceSection() {
 
   return (
     <section
+      id="marketplace"
       aria-labelledby="marketplace-title"
       className="relative isolate overflow-hidden bg-ink-950 py-20 sm:py-24 lg:py-28"
     >

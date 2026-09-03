@@ -10,11 +10,19 @@ import { cn, scrollToSection, whatsappLink } from '../lib/utils';
 import { useScrolled } from '../hooks/useScrolled';
 import { useActiveSection } from '../hooks/useActiveSection';
 
+/**
+ * روابط التنقل — مرتّبة بنفس ترتيب ظهور الأقسام في الصفحة من الأعلى إلى الأسفل.
+ * Single source of truth for the desktop navbar, the mobile menu and the footer,
+ * kept in the same order as the sections render in App.jsx.
+ */
 export const navLinks = [
   { id: 'home', label: 'الرئيسية' },
-  { id: 'collection', label: 'المجموعة' },
+  { id: 'featured', label: 'مختاراتنا' },
   { id: 'categories', label: 'التصنيفات' },
+  { id: 'collection', label: 'المجموعة' },
   { id: 'about', label: 'من نحن' },
+  { id: 'trust', label: 'لماذا أثر' },
+  { id: 'marketplace', label: 'قنوات الشراء' },
   { id: 'contact', label: 'تواصل معنا' },
 ];
 
@@ -69,7 +77,7 @@ export default function Navbar({ onSelectProduct, onSearchAll, onOverlayChange }
             </a>
 
             <nav aria-label="التنقل الرئيسي" className="hidden lg:block">
-              <ul className="flex items-center gap-9">
+              <ul className="flex items-center gap-5 xl:gap-8">
                 {navLinks.map((link) => (
                   <li key={link.id}>
                     <a
@@ -80,7 +88,7 @@ export default function Navbar({ onSelectProduct, onSearchAll, onOverlayChange }
                       }}
                       aria-current={active === link.id ? 'true' : undefined}
                       className={cn(
-                        'group relative block py-2 text-[15px] transition-colors duration-300',
+                        'group relative block py-2 text-[14px] transition-colors duration-300 xl:text-[15px]',
                         solid
                           ? active === link.id
                             ? 'text-ink-900'
